@@ -1,0 +1,56 @@
+/*
+* @Author: Jhon
+* @Date:   2018-08-06 14:25:40
+* @Last Modified by:   Jhon
+* @Last Modified time: 2018-08-06 14:44:23
+*/
+html {
+	font-size: 16px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+.clearfix::after{
+	content: "";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+.clear {
+	*zoom: 1;
+}
+
+
+.mes-one ul, 
+.mes-two ol {
+	font-size: 14px;
+	color: #000;
+	list-style: none;
+	/* float: left; */
+}
+.mes-one li span,
+.mes-two ol span {
+	font-weight: bold;
+	padding-right: 10px;
+}
+.mes-one li,
+.mes-two li {
+	padding-right: 50px;
+	float: left;
+}
+
+.mes-three h3,
+.mes-four h3,
+.mes-five h3
+{
+	font-size: 14px;
+	color: #000;
+	margin-bottom: -10px;
+}
+.mes-three p,
+.mes-four p,
+.mes-five p {
+	font-size: 14px;
+	color: #000;
+}
+
+
