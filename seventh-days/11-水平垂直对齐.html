@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.parent{
+		/* 利用表格属性table-cell */
+	    display: table-cell;
+	    text-align: center;
+	    vertical-align: middle;
+	}
+	.child{
+	    display: inline-block;
+	}
+	</style>
+</head>
+<body>
+<!-- 
+	1. text-align + vertical-align　　在父元素设置text-align和vertical-align，并将父元素设置为table-cell元素，子元素设置为inline-block元素 -->
+<div class="parent" style="background-color: gray; width:200px; height:100px;">
+  	<div class="child" style="background-color: lightblue;">测试文字</div>
+</div> 
+
+<!-- 2..若子元素是图像，可不使用table-cell，而是其父元素用行高替代高度，且字体大小设为0。子元素本身设置vertical-align:middle。 -->
+<!-- 3.使用相对+绝对定位 -->
+<!-- 使用absolute，利用绝对定位元素的盒模型特性，在偏移属性为确定值的基础上，设置margin:auto -->
+</body>
+</html>

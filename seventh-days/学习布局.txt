@@ -1,0 +1,89 @@
+布局：对网页进行排版和盒子的摆放
+	display属性，这个属性是css中最重要的用于控制布局的属性。
+	每个元素都有一个默认的display属性，这和元素的类型有关。对于
+	大多数元素它们默认是block（块级元素）或者inline（行内元素）
+	还有一个值是none。一些特殊元素的默认 display 值是它，例如 script 。 display:none 通常被 JavaScript 用来在不删除元素的情况下隐藏或显示元素。
+	和visibility 属性不一样。把 display 设置成 none 元素不会占据它本来应该显示的空间，但是设置成 visibility: hidden; 还会占据空间。
+	其他 display 值：list-item和table
+margin： auto；
+	这个css规则搭配width来使用，可以设置左右外边距为 auto 来使其水平居中。
+	元素会占据你所指定的宽度，然后剩余的宽度会一分为二成为左右外边距。
+	唯一的问题是，当浏览器窗口比元素的宽度还要窄时，浏览器会显示一个水平滚动条来容纳页面。
+	 改进：所有的主流浏览器包括IE7+在内都支持 max-width ，使用 max-width 替代 width 可以使浏览器更好地处理小窗口的情况。
+box-sizing：border-box;
+	传统的盒子模型不直接,新增了一个叫做 box-sizing 的CSS属性。当你设置一个元素为 box-sizing: border-box; 时，此元素的内边距(padding)和边框(border)不再会增加它的宽度。
+	它是一个很新的属性，需要使用前缀来启用特定浏览器的特性
+	-webkit-和-moz-，它是支持ie8
+position：利用定位实现布局
+float：
+	可以实现文字环绕图片。
+	浮动有影响，要清除浮动影响需要采用一些方法
+	clearfix hack（清除浮动）
+		1.最简单的方法
+				父级元素添加overflow：hidden；
+							zoom：1；（支持ie6）
+		2.父元素也浮动，不现实
+		3.在所有浮动元素的下方写一个空的元素，设置clear：both；
+		4.bootstrap中的写法
+			.clearfix：after{
+				content：‘’;
+				display:table;
+				clear:both;
+			}
+			.clearfix {
+				*zoom:1;
+			}
+
+百分比宽度的问题：
+	百分比是相对于包含块的计量单位。它对图片很有用：例如子元素设置width：50%
+	它将会始终占据父元素的一半宽度。
+
+响应式设计：
+	一种让网站针对不同的浏览器和设备“呈现”不同显示效果的策略，
+	这样可以让网站在任何情况下显示的很棒！
+	要想实现这样的效果，需要一个功能————媒体查询
+	@media screen and (min-width:600px) {
+	  nav {
+	    float: left;
+	    width: 25%;
+	  }
+	  section {
+	    margin-left: 25%;
+	  }
+	}
+	@media screen and (max-width:599px) {
+	  nav li {
+	    display: inline;
+	  }
+	}
+	 使用meta viewport之后也可以让你的布局在移动端显示更加友好 
+
+inline-block属性值
+	你可以创建很多网格来铺满浏览器。在过去很长的一段时间内使用 float 是一种选择，但是使用 display：inline-block ；会更简单。有些时候人们谈到 inline-block 会触发叫做 hasLayout 的东西，你只需要知道那是用来支持旧浏览器的。
+	使用 inline-block 来布局。有一些事情需要你牢记：
+		1.vertical-align 属性会影响到 inline-block 元素，你可能会把它的值设置为 top 。
+		2.你需要设置每一列的宽度
+		3.如果HTML源代码中元素之间有空格，那么列与列之间会产生空隙
+css columns
+	.three-column {
+	  padding: 1em;
+	  -moz-column-count: 3;
+	  -moz-column-gap: 1em;
+	  -webkit-column-count: 3;
+	  -webkit-column-gap: 1em;
+	  column-count: 3;
+	  column-gap: 1em;
+	}	
+	使用这个属性可以帮助你很轻松的实现文字的多列布局，但是需要使用前缀
+	并且不支持ie9以下和Opera Mini浏览器
+flexbox布局的方式：利用给父级元素设置display：flex;变为柔性容器
+	实现内部子元素的水平垂直居中
+		.vertical-container {
+		  height: 300px;
+		  display: -webkit-flex;
+		  display:         flex;
+		  -webkit-align-items: center;
+		          align-items: center;
+		  -webkit-justify-content: center;
+		          justify-content: center;
+		}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        .main{
+            width: 100%;
+            background: red;
+            overflow: hidden;
+        }
+        .left{
+            background: yellow;
+            float: left;
+            width: 100px;
+        }
+        .middle{
+             background: rosybrown;
+             float: left;
+             /* 自动计算剩下的宽度 */
+             width: calc(100%-200px);
+         }
+        .right{
+            background: green;
+            float: right;
+            width: 100px;
+        }
+        </style>
+    </head>
+    <body>
+    	<div class="main">
+	        <div class="left">left</div>
+	        <div class="middle">middle</div>
+	        <div class="right">right</div>
+    	</div>
+    </body>
+</html>

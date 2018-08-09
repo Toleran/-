@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.parent{text-align: center;}    
+	.child{display: inline-block;}
+	</style>
+</head>
+<body>
+	<!-- 设置元素为文本、图片等行内元素时，在父元素中设置text-align:center
+	实现行内元素水平居中，将子元素的display设置为inline-block，使子元素变成行内元素 -->
+	<div class="parent" style="background-color: gray;">
+	  <div class="child" style="background-color: lightblue;">DEMO</div>
+	</div>
+	但是在子元素设置了定宽，那么就不行了，需要使用margin：0 auto；
+</body>
+</html>
