@@ -1,0 +1,136 @@
+/*
+* @Author: Destiny
+* @Date:   2018-08-12 13:16:44
+* @Last Modified by:   Destiny
+* @Last Modified time: 2018-08-12 15:12:12
+*/
+* {
+	margin: 0;
+	padding: 0;
+}
+.w {
+	width: 960px;
+	margin: 0 auto;
+}
+/* top star */
+.top {
+	background-color: #333;
+	color: #fff;
+	height: 80px;
+}
+.top-content {
+	overflow: auto;
+	text-align: center;
+	vertical-align: center;
+}
+.top-l {
+	font-size: 25px;
+	line-height: 80px;
+	float: left;
+}
+.top-r ul {
+	list-style-type: none;
+	float: right;
+	/* line-height: 80px; */
+	padding-top: 10px;
+}
+.top-r li a {
+	color: #fff;
+	float: left;
+	margin-left:10px; 
+}
+/* banner star */
+.banner {
+	height: 300px;
+	background-color: #66bb33;
+}
+.banner-content {
+	height: 100%;
+	position: relative;
+	right: 0;
+}
+.banner-content .banner-square {
+	/* overflow: hidden; */
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+	display: table-cell;
+	vertical-align: bottom;
+}
+.banner .square {
+	float: left;
+	margin-right: 5px;
+	width: 28px;
+	height: 34px;
+	border: 1px solid #335e1a;
+	text-align: center;
+	line-height: 34px;
+	background-color: #e0f1d6;
+}
+.banner-square .active {
+	height: 49px;
+}
+/* nav star */
+.nav {
+	height: 70px;
+	background-color: #fff;
+	border-bottom: 2px solid #dddddd;
+	width: 100%;
+	position: relative;
+}
+.nav-content {
+	position: relative;
+	height: 100%;
+}
+.nav .nav-s {
+	width: 104px;
+	height: 50px;
+	border-left: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-radius: 20px 20px 0 0;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	font-size: 16px;
+	background-color: #eeeeee;
+}
+.nav .nav-title {
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	z-index: 10px;
+}
+.nav .nav-active {
+	background-color: #FFF;
+} 
+
+/* content star  */
+.content {
+	display: flex;
+	flex-wrap: wrap;
+}
+.con {
+	height: 14px;
+	border: 1px solid #ddd;
+	text-align: center;
+	line-height: 14px;
+	padding: 80px;
+	margin: 10px 10px 0 0;
+}
+.con-4, .con-5, .con-6, .con-7 {
+	flex: 1;
+}
+.con-3, .con-2, .con-8, .con-9, .con-10 {
+	flex: 2;
+}
+
+/* footer star */
+.footer {
+	height: 100px;
+	background-color: #666666;
+	margin-top: 20px;
+	text-align: center;
+	padding-top: 20px;
+	color: #fff;
+}

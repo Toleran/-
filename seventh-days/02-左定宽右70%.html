@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.father {
+			display: table-cell;
+			width: 9999px;
+		}
+		.left {
+			height: 200px;
+			width: 300px;
+			float: left;
+			/*margin-left: -100%;*/
+			display: inline-block;
+			background-color: #235;
+		}
+		.right {
+			height: 300px;
+			margin-left: 300px;
+			background-color: #453;
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="left"></div>
+		<div class="right"></div>
+	</div>
+</body>
+</html>
