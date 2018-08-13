@@ -2,7 +2,7 @@
 * @Author: Jhon
 * @Date:   2018-08-13 13:42:03
 * @Last Modified by:   Jhon
-* @Last Modified time: 2018-08-13 14:30:42
+* @Last Modified time: 2018-08-13 19:06:58
 */
 * {
 	margin: 0;
@@ -12,20 +12,343 @@
 	margin: 0 auto;
 	width: 1170px;
 }
+.clearfix:after {
+	content: '';
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
 
+}
 /* top star */
 .top {
 	background: url('images/bg-top.png') no-repeat center top;
 	height: 990px;
-	/* position: relative; */
 }
 .top-mask {
 	height: 990px;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
-
+	position: absolute;
+	top: 0;
 }
 .top-content {
-	height: 990px;
+	padding-top: 210px;
+	height: 780px;
+	width: 1030px;
+	color: #fff;
+}
+.top-content h2 {
+	text-align: center;
+	font-size: 62px;
+	/* color: #fff; */
+	line-height: 130px;
+	font-weight: normal;
+}
+.top-content p {
+	width: 770px;
+	text-align: center;
+	font-size: 16px;
+	margin: 0 auto 100px;
+}
+.top-content .account {
+	width: 968px;
+	height: 188px;
+	border: 1px solid #fff;
+	margin: 0 auto;
+	padding-top: 60px;
+}
+.account h4 {
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+}
+.account span {
+	font-size: 10px;
+	color: #7a7975;
+	display: block;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.account form {
+	margin-left: 100px;
+	font-size: 0px;
+}
+.account input {
+	width: 270px;
+	height: 50px;
+	border: 1px solid #fff;
+	font-size: 12px;
+	border-radius: 3px;
+	background-color: rgba(0, 0, 0, 0.1);
+	margin-right: 30px;
+	padding-left: 20px;
+}
+.account button {
+	width: 124px;
+	height: 50px;
+	border: 1px solid #fff;
+	font-size: 12px;
+	background-color: #fff;
+	color: #000;
+	text-align: center;
+	border-radius: 3px;
+
+}
+
+/* message star */
+.message {
+	height: 620px;
+	background-color: #fff;
+	color: #141414;
+	padding-top: 90px;
+}
+.message h4 {
+	font-size: 16px;
+	text-align: center;
+	line-height: 50px;
+}
+.message h4+p {
+	width: 660px;
+	margin: 0 auto;
+	/* background-color: blue; */
+	font-size: 42px;
+	line-height: 50px;
+	text-align: center;
+	margin-bottom: 85px;
+}
+.mes-box {
+	width: 1070px;
+	margin: 0 auto;
+	/* overflow: hidden; */
+	height: 400px;
+} 
+.mes-box .mobile,
+.mes-box .access,
+.mes-box .fluid,
+.mes-box .custom {
+	float: left;
+	width: 400px;
+	height: 90px;
+}
+.mes-box .fluid,
+.mes-box .mobile {
+	margin-right: 150px;
+}
+.mes-box .mobile,
+.mes-box .access {
+	margin-bottom: 70px;
+}
+.mes-box .mobile span,
+.mes-box .access span,
+.mes-box .fluid span,
+.mes-box .custom span {
+	font-size: 50px;
+	margin-right: 10px;
+	display: inline-block;
+}
+.mes-box .mobile  em,
+.mes-box .access em,
+.mes-box .fluid em,
+.mes-box .custom em {
+	display: inline-block;
+	font-style: normal;
+	font-size: 18px;
+	vertical-align: top;
+}
+.mes-box .mobile  p,
+.mes-box .access p,
+.mes-box .fluid p,
+.mes-box .custom p  {
+	display: inline-block;
+	margin-left: 60px;
+	font-size: 16px;
+	vertical-align: top;
+}
+/* support star */
+.support {
+	background: rgba(0, 0, 0, 0.5) url('images/main.png') no-repeat top center;
+	color: #fff;
+	height: 800px;
+}
+.support-content {
+	width: 970px;
+	padding: 100px 30px 0;
 	position: relative;
+}
+.support-content .support-left {
+	width: 600px;
+	height: 520px;
+	/* background-color: blue; */
+	padding-top: 80px;
+}
+.support-content .support-left h3 {
+	font-size: 42px;
+	line-height: 45px;
+	font-weight: normal;
+	height: 185px;
+}
+.support-content .support-left p {
+	width: 370px;
+	font-size: 18px;
+	text-align: left;
+	line-height: 30px;
+	margin-bottom: 50px;
+}
+.support-content .support-left a {
+	display: inline-block;
+	width: 180px;
+	height: 10px;
+	border: 1px solid #fff;
+	border-radius: 2px;
+	text-align: center;
+	padding: 20px 30px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
+}
+.support-content .support-left a:hover {
+	background-color: #fff;
+	color: #000;
+}
+.support-content .support-right {
+	/* background-color: blue; */
+	display: inline-block;
+	height: 544px;
+	width: 100%;
+	border-left: 1px solid #fff;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	padding: 28px 0 28px 58px;
+	position: absolute;
+	top: 100px;
+	left: 670px;
+	border-radius: 50px;
+}
+.support-content .support-right  div {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+}
+/* product star */
+.product {
+	padding: 100px 20px 0;
+}
+.product h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 30px;
+	font-weight: normal;
+	height: 100px;
+	text-align: center;
+}
+.product-box {
+	height: 360px;
+	width: 970px;
+	/* background-color: blue; */
+	margin: 0 auto;
+}
+.product-box div {
+	width: 300px;
+	float: left;
+	text-align: center;
+}
+.hero {
+	margin: 0 20px;
+}
+.product-box div p {
+	width: 270px;
+	padding-top: 40px;
+	font-size: 16px;
+}
+/* .divider {
+	height: 1px;
+	background-color: #ccc;
+	width: 100%;
+} */
+.business,
+.schemes {
+	width: 970px;
+	margin: 0 auto;
+}
+.business img {
+	float: left;
+	width: 570px;
+	height: 350px;
+	margin-right: 100px;
+	margin-bottom: 80px;
+}
+.business em {
+	float: left;
+	font-style: normal;
+	width: 300px;
+	font-size: 20px;
+	margin-top: 75px;
+	display: inline-block;
+}
+.business p {
+	width: 300px;
+	/* height: 150px; */
+	text-align: left;
+	/* background-color: blue; */
+	float: left;
+	margin-top: 30px;
+
+}
+.schemes img {
+	float: right;
+	width: 570px;
+	height: 350px;
+	margin-left: 100px;
+}
+.schemes em {
+	float: right;
+	font-style: normal;
+	width: 300px;
+	font-size: 20px;
+	margin-top: 75px;
+	display: inline-block;
+}
+.schemes p {
+	width: 300px;
+	text-align: left;
+	float: right;
+	margin-top: 30px;
+
+}
+/* crew star */
+.crew {
+	padding-top: 200px;
+	width: 970px;
+	margin: 0 auto;
+}
+.crew h4 {
+	text-align: center;
+	font-size: 40px;
+	height: 60px;
+	font-weight: normal;
+}
+.crew p  {
+	width: 700px;
+	margin: 0 auto;
+	padding: 0 35px;
+	text-align: center;
+	font-size: 16px;
+	color: #c3c3c3;
+	margin-bottom: 60px;
+}
+.crew-video {
+	float: left;
+	background-color: blue;
+	width: 470px;
+	height: 340px;
+	overflow: hidden;
+}
+.crew-div-1 {
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+.crew-div-4 {
+	margin-top: 30px;
+	margin-left: 30px;
 }
