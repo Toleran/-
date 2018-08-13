@@ -1,0 +1,31 @@
+/*
+* @Author: Jhon
+* @Date:   2018-08-13 13:42:03
+* @Last Modified by:   Jhon
+* @Last Modified time: 2018-08-13 14:30:42
+*/
+* {
+	margin: 0;
+	padding: 0;
+}
+.w {
+	margin: 0 auto;
+	width: 1170px;
+}
+
+/* top star */
+.top {
+	background: url('images/bg-top.png') no-repeat center top;
+	height: 990px;
+	/* position: relative; */
+}
+.top-mask {
+	height: 990px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+
+}
+.top-content {
+	height: 990px;
+	position: relative;
+}
