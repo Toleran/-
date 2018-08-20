@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?33kj7p');
+  src:  url('fonts/icomoon.eot?33kj7p#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?33kj7p') format('truetype'),
+    url('fonts/icomoon.woff?33kj7p') format('woff'),
+    url('fonts/icomoon.svg?33kj7p#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-brightness_low:before {
+  content: "\e1ad";
+}
+.icon-navigate_before:before {
+  content: "\e408";
+}
+.icon-navigate_next:before {
+  content: "\e409";
+}
+.icon-delete:before {
+  content: "\e872";
+}
+.icon-delete_forever:before {
+  content: "\e92b";
+}
+.icon-folder_shared:before {
+  content: "\e2c9";
+}
+.icon-library_books:before {
+  content: "\e02f";
+}
+.icon-linked_camera:before {
+  content: "\e438";
+}
+.icon-live_tv:before {
+  content: "\e639";
+}
+.icon-note_add:before {
+  content: "\e89c";
+}
+.icon-play_arrow:before {
+  content: "\e037";
+}
