@@ -2,7 +2,7 @@
 * @Author: Jhon
 * @Date:   2018-08-20 17:59:24
 * @Last Modified by:   Jhon
-* @Last Modified time: 2018-08-20 18:41:45
+* @Last Modified time: 2018-08-21 14:41:54
 */
 * {
 	padding: 0;
@@ -19,24 +19,100 @@
 html, body {
 	height: 100%;
 }
-/* nav satr */
+
 .page {
 	display: flex;
 	align-items: flex-start;
 	height: 100%;
 } 
+/* nav satr */
 .nav {
-	padding-right: 100px;
+	width: 60px;
+	padding: 20px;
 	background-color: #1d2531;
 	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
 }
-.menu {
+.nav-content {
+	position: relative;
+	height: 100%;
+}
+.nav ul li {
+	list-style: none;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.nav ul li a {
+	width: 60px;
+	display: inline-block;
+	background-color: #2399f1;
+	border-radius: 50%;
+	padding-top: 8px;
+	height: 52px;
+	vertical-align: bottom;
+}
+.nav ul li .nav-2 {
+	background-color: #927de4;
+}
+.nav ul li .nav-3 {
+	background-color: #ed4d30;
+}
+.nav ul li .nav-4 {
+	background-color: #1d2531;
+	border: 1px solid #2d3848;
+	height: 50px;
+	width: 58px;
+}
+.nav-bottom   {
+	position: absolute;
+	bottom: 40px;
+	left: 6px;
+	font-size: 0px;
 	
-	padding-right: 250px;
+} 
+.nav-bottom  a {
+	display: inline-block;
+	height: 16px;
+	width: 25px;
+}
+/* menu star */
+.menu {
+	padding: 30px;
+	width: 190px;
+	margin-left: 100px;
 	background-color: #222c3c;
 	height: 100%;
-
+	font-size: 14px;
 }
+.menu .sales,
+.menu .product {
+	border-bottom: 1px solid #2a3547;
+	margin-bottom: 23px;
+}
+.menu .sales dd {
+	margin-bottom: 23px;
+}
+.menu .sales dt,
+.menu .product li,
+.menu .dashboard li {
+	margin-bottom: 26px;
+	font-size: 12px;
+	color: #5b6779;
+}
+.menu .sales dd a,
+.menu .product li a,
+.menu .dashboard li a {
+	text-decoration: none;
+	color: #b7c0cd;
+}
+.menu .product {
+	list-style: none;
+}
+.menu .product li
 .message {
 	flex: 1;
 	width: 100%;
