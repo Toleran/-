@@ -1,0 +1,100 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 16px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+.clearfix::after {
+	content: "";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+.clear {
+	*zoom: 1;
+}
+
+h1 {
+	margin: 0;
+	font-size: 25px;
+	color: #fff;
+	line-height: 100px;
+	height: 100px;
+	padding-left: 50px;
+	background-color: #323232;
+
+}
+.mes-one ,
+.mes-two ,
+.mes-three,
+.mes-four,
+.mes-five {
+	border: 1px solid #888;	
+}
+
+.mes-one h2,
+.mes-two h2,
+.mes-three h2,
+.mes-four h2,
+.mes-five h2 {
+	margin: 0;
+	font-size: 16px;
+	float: left;
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	line-height: 200px;
+	color: #111;
+	background-color: #ccc;
+	border: 1px soid #fff;
+}
+
+.mes-one ul, 
+.mes-two ol {
+	font-size: 14px;
+	color: #000;
+	list-style: none;
+	margin: 0;
+	float: left;
+	padding-top: 20px;	
+}
+.mes-one li span,
+.mes-two ol span {
+	font-weight: bold;
+	padding-right: 10px;
+}
+.mes-one li,
+.mes-two li {
+	padding-right: 50px;
+	float: left;
+}
+
+.mes-three h3,
+.mes-four h3,
+.mes-five h3
+{
+	font-size: 14px;
+	color: #000;
+	margin-bottom: -10px;
+}
+.mes-three p,
+.mes-four p,
+.mes-five p {
+	font-size: 14px;
+	color: #000;
+}
+
+.content {
+	float: left;
+	padding-left: 50px;
+	padding-top: 20px;
+}
+
+.content h3,
+.content p {
+	float: left;
+	margin: 0;
+}
