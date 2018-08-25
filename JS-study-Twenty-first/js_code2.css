@@ -1,0 +1,16 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+.father {
+	
+	width: 480px;
+	height: 480px;
+	border: 1px solid #ccc;
+}
+.im {
+	width: 480px;
+	height: 480px;
+	background: url('erik.jpg') no-repeat;
+	background-position: 0 0;
+}
