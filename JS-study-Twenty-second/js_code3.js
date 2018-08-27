@@ -1,11 +1,11 @@
 // 实现一个字符串头尾去除空格的函数
 // 注意需要去除的空格，包括全角、半角空格
 // 暂时不需要学习和使用正则表达式的方式
-*/
+
 function diyTrim(str) {
     var result = "";
 
-    // do something
+    result = str.trim();
 
     return result
 }
@@ -26,9 +26,14 @@ console.log(diyTrim('')); // ->
 function removeRepetition(str) {
     var result = "";
 
-    // do something
-
-    return result;
+    var a = str.split('');//分割字符串
+    var b =new Array();
+    for (var i in a) {
+    	if (b.indexOf(a[i])== -1) {
+    		b.push(a[i]);
+    	}
+    }
+    return result=b.join('');
 }
 
 // 测试用例
